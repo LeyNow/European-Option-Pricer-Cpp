@@ -3,7 +3,6 @@
 #include <random>
 #include <algorithm>
 #include <vector>
-#include <mutex>
 #include <cmath>
 #include <chrono>
 
@@ -31,7 +30,6 @@ class Monte_Carlo {
     double prix_actualise_put = 0.0;
     int nombre_simulations = 0;
     double z = 0.0;
-    std::mutex mtx;
     
     public :
 
@@ -50,7 +48,6 @@ class Monte_Carlo {
     }
 
     void work_thread_simulation() {
-        std::lock_guard<std::mutex> lock(mtx); // Utilisation de mutex pour safe les threads
         double somme = 0.0;
         for (int i = 0; i < nombre_simulations; i++) {
             z = générateur_loi_normale();
