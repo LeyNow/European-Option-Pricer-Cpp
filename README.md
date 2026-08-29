@@ -34,3 +34,5 @@ g++ {path\_of\_file} -o monte\_carlo.exe
 And then to **execute** :
 
 ./monte\_carlo.exe
+
+The multithreading is the principal feature of this program. This makes its possible greater performance. This program is only built for European options (the calculation is done at the expiration date).
