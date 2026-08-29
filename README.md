@@ -20,9 +20,11 @@ Et ensuite pour **executer** :
 
 
 
-
-
 L'implémentation du multi-threading est une des principales caractéristiques de ce programme. Cela permet de meilleure performance. Un système de calcul de temps d'execution permet de mesurer justement ces performances. Ce programme ne marche que pour des options européennes (le calcul se fait seulement à maturité T). 
+
+
+
+English translation :
 
 
 This program is a first project of **Option Pricer** for me. This code isn't perfect but presents an **interesting construction**. 
